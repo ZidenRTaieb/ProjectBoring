@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8"/>
+    <title>Title</title>
+</head>
+<body style="background-color:#d71502">
+
+<div style="color: blanchedalmond;background-color: black;font-size: 45px">Boring</div><br>
+<h:form th:action="@{/login}" method="post">
+
+    <div><label> Avatar : <input type="file" style="margin: 2px"/> </label></div>
+
+    <div><label> Firstname : <input type="text" style="margin: 2px;padding-left: auto" required/> </label></div>
+    <div><label> Lastname : <input type="text" style="margin: 2px" required/> </label></div>
+    <div><label> Surname : <input type="text" style="margin: 2px" required/> </label></div>
+    <div><label> Birthday : <input type="date" style="margin: 2px" required/> </label></div>
+    <div><label> Email : <input type="email" style="margin-block: 50px" required/> </label></div>
+    <div><label> Password: <input type="password"style="margin-block: 50px" /> </label></div>
+    <div><label> Role :   User<input type="radio" required/>  User/Organizer<input type="radio" required/>  Organizer Pro<input type="radio" required/> </label></div>
+
+
+    <div><input type="submit" value="Sign In"/></div>
+
+</h:form>
+
+</body>
+</html>
